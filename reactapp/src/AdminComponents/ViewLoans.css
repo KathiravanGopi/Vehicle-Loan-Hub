@@ -1,0 +1,294 @@
+
+.loans-table-card {
+    transition: box-shadow 0.2s ease;
+    overflow-x: hidden;
+}
+
+.table-responsive {
+    overflow-x: visible !important;
+}
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+}
+
+.loans-table {
+    border: none !important;
+}
+
+.loans-table thead th {
+    border: none !important;
+}
+
+.loans-table tbody td {
+    border: none !important;
+    border-top: none !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > td,
+.table-striped > tbody > tr:nth-of-type(odd) > th {
+    background-color: transparent !important;
+}
+
+.loans-table-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+}
+
+.loans-table-header {
+    background: #1e5fa8 !important;
+}
+
+.loans-table-header th {
+    color: white !important;
+    background: #1e5fa8 !important;
+    font-weight: 600 !important;
+    font-size: 14px !important;
+    padding: 16px !important;
+    border: none !important;
+    text-align: center;
+}
+
+.sort-btn {
+    background: transparent !important;
+    color: white !important;
+    line-height: 1 !important;
+}
+
+.sort-btn:disabled {
+    opacity: 0.6;
+}
+
+.loan-row {
+    border-bottom: 1px solid #e5e7eb !important;
+    transition: background-color 0.2s ease !important;
+}
+
+.loan-row td {
+    padding: 16px !important;
+    vertical-align: middle !important;
+    font-weight: 500;
+    color: #374151;
+}
+
+.loans-table .even-row {
+    background-color: #ffffff !important;
+}
+
+.loans-table .odd-row {
+    background-color: #f8f9fa !important;
+}
+
+.loans-table tbody tr.even-row {
+    background-color: #ffffff !important;
+}
+
+.loans-table tbody tr.odd-row {
+    background-color: #f8f9fa !important;
+}
+
+.table tbody tr.even-row td {
+    background-color: #ffffff !important;
+}
+
+.table tbody tr.odd-row td {
+    background-color: #f8f9fa !important;
+}
+
+.loans-table-card .table tbody .even-row {
+    background-color: #ffffff !important;
+}
+
+.loans-table-card .table tbody .even-row td {
+    background-color: #ffffff !important;
+}
+
+.loans-table-card .table tbody .odd-row {
+    background-color: #f8f9fa !important;
+}
+
+.loans-table-card .table tbody .odd-row td {
+    background-color: #f8f9fa !important;
+}
+
+.loans-table-card .table.table-hover tbody tr.even-row td {
+    background-color: #ffffff !important;
+}
+
+.loans-table-card .table.table-hover tbody tr.odd-row td {
+    background-color: #f8f9fa !important;
+}
+
+tr[class*="even-row"] {
+    background-color: #ffffff !important;
+}
+
+tr[class*="odd-row"] {
+    background-color: #f8f9fa !important;
+}
+
+tr[class*="even-row"] td {
+    background-color: #ffffff !important;
+}
+
+tr[class*="odd-row"] td {
+    background-color: #f8f9fa !important;
+}
+
+.loans-table .loan-row:hover,
+.loans-table .loan-row.even-row:hover,
+.loans-table .loan-row.odd-row:hover {
+    background-color: #e9ecef !important;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.loans-table .loan-row:hover td,
+.loans-table .loan-row.even-row:hover td,
+.loans-table .loan-row.odd-row:hover td {
+    background-color: #e9ecef !important;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e9ecef !important;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #e9ecef !important;
+}
+
+.amount-cell {
+    font-weight: 600 !important;
+    color: #059669 !important;
+}
+
+.rate-cell {
+    font-weight: 500 !important;
+    color: #1e5fa8 !important;
+    text-align: center !important;
+}
+
+.description-cell {
+    color: #6b7280 !important;
+    font-size: 14px !important;
+}
+
+.actions-cell {
+    min-width: 140px;
+    text-align: center;
+}
+
+.action-btn {
+    border-radius: 8px !important;
+    font-weight: 500 !important;
+    font-size: 12px !important;
+    transition: all 0.2s ease !important;
+    min-width: 60px;
+    white-space: nowrap;
+}
+
+.action-btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn-primary.action-btn:hover {
+    box-shadow: 0 4px 12px rgba(30, 95, 168, 0.3);
+}
+
+.btn-danger.action-btn:hover {
+    box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3);
+}
+
+.empty-row {
+    text-align: center !important;
+    padding: 32px !important;
+}
+
+.empty-row div {
+    color: #9ca3af !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+.form-control:focus {
+    border-color: #1e5fa8 !important;
+    box-shadow: 0 0 0 0.2rem rgba(30, 95, 168, 0.25) !important;
+}
+
+@media (max-width: 992px) {
+    .loans-table-header th {
+        padding: 14px 10px !important;
+        font-size: 13px !important;
+    }
+
+    .loan-row td {
+        padding: 14px 10px !important;
+        font-size: 13px !important;
+    }
+
+    .action-btn {
+        font-size: 11px !important;
+        padding: 6px 10px !important;
+        margin: 2px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .loans-table-header th {
+        padding: 12px 8px !important;
+        font-size: 12px !important;
+    }
+
+    .loan-row td {
+        padding: 12px 8px !important;
+        font-size: 12px !important;
+    }
+
+    .action-btn {
+        font-size: 10px !important;
+        padding: 5px 8px !important;
+        margin: 1px !important;
+        min-width: 50px;
+    }
+
+    .amount-cell, .rate-cell {
+        font-size: 12px !important;
+    }
+
+    .description-cell {
+        font-size: 11px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .action-btn {
+        font-size: 9px !important;
+        padding: 4px 6px !important;
+        min-width: 45px;
+        display: block !important;
+        width: 100% !important;
+        margin: 1px 0 !important;
+    }
+
+    .loans-table-header th {
+        padding: 10px 6px !important;
+        font-size: 11px !important;
+    }
+
+    .loan-row td {
+        padding: 10px 6px !important;
+        font-size: 11px !important;
+    }
+}
+
+.loans-page-title {
+    background: linear-gradient(135deg, #1e5fa8, #7dd3d3);
+    -webkit-background-clip: text;
+    font-size: 24px;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+    color: #1e5fa8;
+    margin-bottom: 8px;
+    text-align: center;
+}

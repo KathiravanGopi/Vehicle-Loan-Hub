@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-y: auto; /* Allows vertical scrolling */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.homepage-wrapper {
+  background: #ffffff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 40px 70px 40px;
+  width: 100%;
+}
+
+.homepage-wrapper > div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+  width: 320px;
+  height: 290px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.homepage-image {
+  height: 100%;
+  width: 100%;
+  display: block;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  object-fit: cover;
+}
+
+.homepage-title-overlay {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.642);
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 6px 46px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #1a1a1a;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 8px;
+  white-space: nowrap;
+  border: 2px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.homepage-description {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.65;
+  text-align: center;
+  max-width: 1000px;
+  font-weight: 400;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.homepage-footer {
+  position: fixed;
+  background: #454545;
+  left: 0;
+  bottom: 0;
+  padding: 18px 30px;
+  font-size: 0.95rem;
+  color: #ffffff;
+  width: 100vw;
+  text-align: center;
+}
+
+.homepage-footer p {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  word-break: break-word;
+}
+
+.homepage-footer strong {
+  color: #ffffff;
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.homepage-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 400;
+  transition: all 0.3s ease;
+}
+
+.homepage-footer a:hover {
+  text-decoration: underline;
+}

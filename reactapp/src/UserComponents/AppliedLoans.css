@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+}
+
+.applied-loans-container {
+  background: #f5f5f5;
+  min-height: 100vh;
+  padding: 32px 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.container-max {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.applied-loans-title {
+  background: linear-gradient(135deg, #1e5fa8, #7dd3d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 24px;
+  color: #1e5fa8;
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.loans-divider {
+  width: 180px;
+  height: 4px;
+  background: linear-gradient(90deg, #1e5fa8, #7dd3d3);
+  margin: 0 auto 32px;
+  border-radius: 3px;
+}
+
+
+.search-section {
+  margin-bottom: 24px;
+}
+
+.loans-search {
+  max-width: 350px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  padding: 12px 16px;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.loans-search:focus {
+  outline: none;
+  border-color: #1e5fa8;
+  box-shadow: 0 0 0 3px rgba(30, 95, 168, 0.1);
+}
+
+.loans-table-card {
+  background: white !important;
+  border-radius: 12px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  overflow: hidden !important;
+  transition: box-shadow 0.2s ease !important;
+  border: none !important;
+}
+
+.loans-table-card .card-body {
+  padding: 0 !important;
+}
+
+.loans-table-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+  transition: opacity 0.2s ease;
+}
+
+
+
+.loans-table,
+.table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 0 !important;
+}
+
+.loans-table thead th,
+.table thead th {
+  background: #1e5fa8 !important;
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 14px !important;
+  padding: 16px !important;
+  text-align: center !important;
+  border: none !important;
+}
+
+.loans-table tbody td,
+.table tbody td {
+  border: none !important;
+  border-bottom: 1px solid #e5e7eb !important;
+  padding: 16px !important;
+  vertical-align: middle !important;
+  font-weight: 500 !important;
+  color: #374151 !important;
+}
+
+.loan-row,
+.table tbody tr {
+  transition: background-color 0.2s ease !important;
+}
+
+.even-row,
+.table tbody tr:nth-child(even) {
+  background-color: #fff !important;
+}
+
+.odd-row,
+.table tbody tr:nth-child(odd) {
+  background-color: #f9fafb !important;
+}
+
+.loan-row:hover,
+.table tbody tr:hover {
+  background-color: #f3f4f6 !important;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.05) !important;
+}
+
+.sort-btn,
+.btn-link.sort-btn {
+  background: transparent !important;
+  color: white !important;
+  border: none !important;
+  padding: 1px 2px !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  transition: opacity 0.2s ease !important;
+  text-decoration: none !important;
+  min-width: auto !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.sort-btn:disabled,
+.btn-link.sort-btn:disabled {
+  opacity: 0.6 !important;
+  cursor: default !important;
+  color: white !important;
+}
+
+.sort-btn:hover:not(:disabled),
+.btn-link.sort-btn:hover:not(:disabled) {
+  opacity: 1 !important;
+  transform: scale(1.1) !important;
+  color: white !important;
+  text-decoration: none !important;
+}
+
+.sort-btn:focus,
+.btn-link.sort-btn:focus {
+  box-shadow: none !important;
+  color: white !important;
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+}
+
+.loan-type-cell {
+  font-weight: 600;
+  color: #1e5fa8;
+}
+
+.date-cell {
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-cell {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.status-badge,
+.badge {
+  padding: 6px 12px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  display: inline-block !important;
+  text-align: center !important;
+}
+
+.status-pending,
+.badge.status-pending {
+  background-color: #fde68a !important;
+  color: #78350f !important;
+  border: 1px solid #f59e0b !important;
+}
+
+.status-approved,
+.badge.status-approved {
+  background-color: #bbf7d0 !important;
+  color: #14532d !important;
+  border: 1px solid #10b981 !important;
+}
+
+.status-rejected,
+.badge.status-rejected {
+  background-color: #fecaca !important;
+  color: #7f1d1d !important;
+  border: 1px solid #ef4444 !important;
+}
+
+.actions-cell {
+  text-align: center;
+  min-width: 140px;
+}
+
+/* Pagination spacing */
+.pagination-container {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.action-btn,
+.btn {
+  border-radius: 8px !important;
+  font-weight: 500 !important;
+  font-size: 12px !important;
+  padding: 8px 16px !important;
+  border: none !important;
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  min-width: 60px !important;
+  white-space: nowrap !important;
+}
+
+.btn-danger {
+  background-color: #dc3545 !important;
+  color: white !important;
+}
+
+.btn-danger:hover {
+  background-color: #c82333 !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 12px rgba(220, 53, 69, 0.3) !important;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 32px;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 768px) {
+  .applied-loans-title {
+    font-size: 24px;
+  }
+
+  .loans-table thead th {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .loans-table tbody td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .action-btn {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+
+  .date-cell {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .applied-loans-container {
+    padding: 20px 12px;
+  }
+
+  .action-btn {
+    font-size: 9px;
+    padding: 4px 6px;
+    min-width: 50px;
+  }
+
+  .loans-search {
+    max-width: 100%;
+  }
+}

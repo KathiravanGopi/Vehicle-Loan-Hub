@@ -1,0 +1,268 @@
+.viewall-loans-container {
+  background-color: #f5f5f5;
+  min-height: 100vh;
+  padding: 32px 20px;
+}
+
+.viewall-loans-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title Styling */
+.viewall-loans-title {
+  background: linear-gradient(135deg, #1e5fa8, #7dd3d3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  color: #1e5fa8;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+/* Search Container */
+/* Search section aligned with AppliedLoans */
+.search-section {
+  margin-bottom: 24px;
+}
+
+.loans-search {
+  max-width: 350px;
+  border-radius: 12px;
+  border: 2px solid #e5e7eb;
+  padding: 12px 16px;
+  font-size: 14px;
+  width: 100%;
+  transition: all 0.2s ease;
+}
+
+.loans-search:focus {
+  outline: none;
+  border-color: #1e5fa8;
+  box-shadow: 0 0 0 3px rgba(30, 95, 168, 0.1);
+}
+
+/* Table Wrapper */
+.table-wrapper {
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.table-wrapper:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* Table Styling */
+.loans-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+.table-header {
+  background-color: #1e5fa8;
+}
+
+.table-header th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  color: white;
+  border: none;
+}
+
+/* Update existing styles */
+
+.loans-table thead th {
+  background: #1e5fa8;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 14px;
+  text-align: left;
+  border-right: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+
+.sort-btn {
+  background: none;
+  color: white;
+  border: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  font-size: 12px;
+}
+
+.sort-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.sort-btn:hover:not(:disabled) {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.sort-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: center;
+}
+
+/* Removed custom divider per standardized headings policy */
+
+/* Table Row Styling */
+.loan-row {
+  border-bottom: 1px solid #e5e7eb;
+  transition: all 0.2s ease;
+}
+
+.even-row {
+  background-color: #fff;
+}
+
+.odd-row {
+  background-color: #f9fafb;
+}
+
+.loan-row:hover {
+  background-color: #f3f4f6;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loan-row td {
+  padding: 16px;
+  font-size: 14px;
+  color: #374151;
+  font-weight: 500;
+}
+
+/* Cell specific styling */
+.rate-cell {
+  text-align: center;
+  color: #1e5fa8;
+  font-weight: 600;
+}
+
+.amount-cell {
+  color: #059669;
+  font-weight: 600;
+}
+
+/* Apply button styling */
+.apply-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 6px rgba(40, 167, 69, 0.15);
+}
+
+.apply-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.2);
+}
+
+/* Empty state styling */
+.empty-message {
+  text-align: center;
+  padding: 32px;
+  color: #9ca3af;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Pagination Container */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(33, 150, 243, 0.12);
+}
+
+.pagination-btn:disabled {
+  background-color: #cfd8dc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.page-info {
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  min-width: 140px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+
+  .table-header th,
+  .table-row td {
+    padding: 14px 10px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .search-input {
+    max-width: 100%;
+  }
+
+  .table-header th,
+  .table-row td {
+    padding: 12px 8px;
+    font-size: 12px;
+  }
+
+  .apply-btn {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .table-header th,
+  .table-row td {
+    padding: 10px 6px;
+    font-size: 11px;
+  }
+
+  .apply-btn {
+    padding: 5px 10px;
+    font-size: 11px;
+  }
+}

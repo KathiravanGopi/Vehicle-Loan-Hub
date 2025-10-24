@@ -1,0 +1,44 @@
+/* Gradient background */
+
+
+.navbar-gradient {
+  background: linear-gradient(to right, #1e5fa8, #7dd3d3, #1e5fa8);
+}
+
+.user-role-badge {
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+  padding: 6px 16px !important;
+  border-radius: 20px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  margin-right: 15px !important;
+  white-space: nowrap !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+} 
+
+/* Nav link styling */
+.nav-link-custom {
+  color: white !important;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-link-custom:hover {
+  color: #ffd700 !important;
+}
+
+/* Logout button styling */
+.logout-button {
+  background-color: red !important;
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+  background-color: darkred !important;
+}

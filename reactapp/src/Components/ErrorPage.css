@@ -1,0 +1,90 @@
+.error-page-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+}
+
+.error-card {
+  background: white;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  padding: 60px 50px;
+  max-width: 600px;
+  width: 100%;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.error-icon {
+  width: 100px;
+  height: 100px;
+  fill: currentColor;
+}
+
+.decorative-circle-1 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: rgba(211, 47, 47, 0.05);
+  top: -50px;
+  right: -50px;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.decorative-circle-2 {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(211, 47, 47, 0.05);
+  bottom: -30px;
+  left: -30px;
+  z-index: 0;
+  border-radius: 50%;
+}
+
+.error-content {
+  position: relative;
+  z-index: 1;
+}
+
+.error-icon-wrapper {
+  margin-bottom: 1.5rem;
+}
+
+.error-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  color: #5a6c7d;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 450px;
+}
+
+.error-button {
+  background: linear-gradient(135deg, #1976d2, #2196f3);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 40px;
+  font-size: 1rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(25, 118, 210, 0.3);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.error-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(25, 118, 210, 0.4);
+}

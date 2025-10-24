@@ -1,0 +1,70 @@
+# dependencies
+/node_modules/
+**/node_modules/
+.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+**/tests/
+
+# testing
+/coverage
+
+# production
+/build
+/dist
+dist-ssr
+
+# misc
+.DS_Store
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Editor-specific files
+.vscode/
+!.vscode/extensions.json
+.idea
+*.iml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Node-specific
+.npm
+.eslintcache
+.node_repl_history
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+.temp/
+tmp/
+*.tmp
+*.bak
+
+# Sonar
+.sonarqube/
+.sonarlint/
+<<<<<<< Updated upstream
+
+=======
+>>>>>>> Stashed changes
+**/tests/
